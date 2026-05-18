@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Playwrite+DK+Uloopet+Guides&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Abel", sans-serif;
+}
+header , footer {
+	width: 100vw;
+	height: 100vh;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	color: white;
+}
+header {
+	background-size: cover;
+	background-position: center;
+	background-image: url(img/header.jpg);
+}
+main {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(14, 1fr);
+}
+.main__block_h1 {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.7);
+	font-size: 0.8em;
+	text-align: center;
+}
+.main__block_h1_1 {
+	grid-area: 2/1/7/4;
+}
+.main__block_h1_2 {
+	grid-area: 7/5/9/9;
+}
+.main__block_p {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	text-align: center;
+}	
+.main__block_p_1 {
+	grid-area: 9/1/12/5;
+}
+.main__block_p_2 {
+	grid-area: 13/7/15/13;
+}
+.main__img_right {
+	background: url(img/main__right.jpg);
+	grid-area: 9/5/13/13;
+}
+.main__img_left {
+	background: url(img/main__left.jpg);
+	grid-area: 1/1/4/8;
+}
+.main__img_rosl {
+	grid-area: 1/8/5/13;
+}
+.main__img_rosl_2 {
+	background: url(img/main__rosl2.jpg);
+	grid-area: 12/1/15/7;
+}
+.main__img_flora {
+	background: url(img/main__flora.jpg);
+	grid-area: 4/1/9/8;
+}
+.main__img_flora_2 {
+	background: url(img/main__flora2.jpg);
+	grid-area: 5/8/9/13;
+}
+.main__img {
+	background-size: cover;
+	background-position: center;
+}
+footer {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(img/footer.jpg);
+	background-size: cover;
+	background-position: center;
+}
+img {
+	width: 100%;
+	height: 100%;
+}
+@media screen and (max-width: 360px) {
+	h1 {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 20px;
+	}
+}
